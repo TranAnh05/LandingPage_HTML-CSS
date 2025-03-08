@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <!-- pc header -->
+        <header class="header">
+            <div class="inner">
+                <!-- logo -->
+                <div class="inner-logo">
+                    <a href="#!" class="inner-logo__icon">
+                        <img
+                            src="./assets/img/inner-icon.svg"
+                            alt=""
+                            class="inner-logo__icon-img"
+                        />
+                    </a>
+                    <a href="#!" class="inner-logo__email"
+                        >hi@arif.interactive</a
+                    >
+                </div>
+
+                <!-- avatar -->
+                <img
+                    src="./assets/img/inner_avatar.png"
+                    alt=""
+                    class="inner__avatar"
+                />
+
+                <!-- navbar -->
+                <nav class="navbar">
+                    <ul class="navbar__list" id="pc-nav">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Journey</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Service</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- toggle menu -->
+                <label for="menu-checkbox" class="toggle-menu show-on-mobile">
+                    <svg
+                        width="17"
+                        height="8"
+                        viewBox="0 0 17 8"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 7H16"
+                            stroke="#5D3BEE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1 1H16"
+                            stroke="#5D3BEE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </label>
+            </div>
+        </header>
+
+        <!-- pc tablet/mobile -->
+        <header class="mobile-header show-on-mobile">
+            <!-- menu checkbox -->
+            <input
+                type="checkbox"
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- menu drawer -->
+            <div class="menu-drawer" for="menu-checkbox">
+                <!-- logo -->
+                <div class="inner-logo">
+                    <a href="#!" class="inner-logo__icon">
+                        <img
+                            src="./assets/img/inner-icon.svg"
+                            alt=""
+                            class="inner-logo__icon-img"
+                        />
+                    </a>
+                    <a href="#!" class="inner-logo__email"
+                        >hi@arif.interactive</a
+                    >
+                </div>
+
+                <!-- navbar -->
+                <ul id="mobile-nav">
+                    <script>
+                        const pcNav = document.getElementById("pc-nav");
+                        const mobileNav = document.getElementById("mobile-nav");
+
+                        mobileNav.innerHTML = pcNav.innerHTML;
+                    </script>
+                </ul>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- deco  -->
+                    <img
+                        src="./assets/img/hero-deco-small-01.svg"
+                        alt=""
+                        class="hero__deco-small hero__deco-small-01"
+                    />
+                    <img
+                        src="./assets/img/hero-deco-small-02.svg"
+                        alt=""
+                        class="hero__deco-small hero__deco-small-02"
+                    />
+                    <img
+                        src="./assets/img/hero-deco-small-03.svg"
+                        alt=""
+                        class="hero__deco-small hero__deco-small-03"
+                    />
+                    <img
+                        src="./assets/img/hero-deco-small-04.svg"
+                        alt=""
+                        class="hero__deco-small hero__deco-small-04"
+                    />
+
+                    <div class="hero__media">
+                        <img
+                            src="./assets/img/hero-img.png"
+                            alt="An Interactive Designer"
+                            class="hero__img"
+                        />
+
+                        <!-- deco big -->
+                        <img
+                            src="./assets/img/hero-deco-big-01.svg"
+                            alt=""
+                            class="hero__deco-big hero__deco-big-01"
+                        />
+                        <img
+                            src="./assets/img/hero-deco-big-02.svg"
+                            alt=""
+                            class="hero__deco-big hero__deco-big-02"
+                        />
+                        <img
+                            src="./assets/img/hero-deco-big-03.svg"
+                            alt=""
+                            class="hero__deco-big hero__deco-big-03"
+                        />
+                        <img
+                            src="./assets/img/hero-deco-big-04.svg"
+                            alt=""
+                            class="hero__deco-big hero__deco-big-04"
+                        />
+
+                        <!-- deco mobile -->
+                        <img
+                            src="./assets/img/hero-deco-mobile-01.svg"
+                            alt=""
+                            class="hero__deco-mobile hero__deco-mobile-01 show-on-mobile"
+                        />
+
+                        <img
+                            src="./assets/img/hero-deco-mobile-02.svg"
+                            alt=""
+                            class="hero__deco-mobile hero__deco-mobile-02 show-on-mobile"
+                        />
+
+                        <img
+                            src="./assets/img/hero-deco-mobile-03.svg"
+                            alt=""
+                            class="hero__deco-mobile hero__deco-mobile-03 show-on-mobile"
+                        />
+
+                        <img
+                            src="./assets/img/hero-deco-mobile-04.svg"
+                            alt=""
+                            class="hero__deco-mobile hero__deco-mobile-04 show-on-mobile"
+                        />
+                    </div>
+
+                    <div class="hero__content">
+                        <h1 class="hero__heading">An Interactive Designer</h1>
+                        <p class="section-desc hero__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <div class="hero__action">
+                            <a href="#!" class="btn hero__btn">Book a Call</a>
+                            <a href="#!" class="hero__my-work">My Works</a>
+                        </div>
+                        <div class="hero-social">
+                            <span class="hero__label">Follow me on:</span>
+                            <a href="#!" class="hero__icon">
+                                <img
+                                    src="./assets/img/hero-icon-be.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#!" class="hero__icon">
+                                <img
+                                    src="./assets/img/hero-icon-ball.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#!" class="hero__icon">
+                                <img
+                                    src="./assets/img/hero-icon-insta.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main -->
+        <main>
+            <!-- client -->
+            <section class="client">
+                <div class="container">
+                    <div class="client__inner">
+                        <h2 class="client__title">Meet my recent clients</h2>
+
+                        <div class="client__brand-wrap">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-google.svg"
+                                    alt=""
+                                    class="client__brand"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-warner.svg"
+                                    alt=""
+                                    class="client__brand client__brand-warner"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-mailchimp.svg"
+                                    alt=""
+                                    class="client__brand"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-adobe.svg"
+                                    alt=""
+                                    class="client__brand"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-upwork.svg"
+                                    alt=""
+                                    class="client__brand"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-cloud.svg"
+                                    alt=""
+                                    class="client__brand client__brand-cloud"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-woocommerce.svg"
+                                    alt=""
+                                    class="client__brand"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/client-canva.svg"
+                                    alt=""
+                                    class="client__brand"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- speciality -->
+            <section class="speciality">
+                <div class="container">
+                    <div class="speciality__heading-wrap">
+                        <h2 class="section-heading speciality__heading">
+                            Specialities
+                        </h2>
+                        <p class="section-desc speciality__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+                    <div class="speciality__list">
+                        <div class="row row-cols-lg-3 row-cols-sm-1 row-cols-1">
+                            <!-- item 1 -->
+                            <div class="col">
+                                <div class="speciality-item">
+                                    <div class="speciality-item__icon-wrap">
+                                        <img
+                                            src="./assets/img/speciality-icon-01.svg"
+                                            alt=""
+                                            class="speciality-item__icon"
+                                        />
+                                    </div>
+                                    <h3>
+                                        <a
+                                            href="#!"
+                                            class="speciality-item__title"
+                                            >Product design</a
+                                        >
+                                    </h3>
+                                    <p
+                                        class="section-desc speciality-item__desc"
+                                    >
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="col">
+                                <div class="speciality-item">
+                                    <div class="speciality-item__icon-wrap">
+                                        <img
+                                            src="./assets/img/speciality-icon-02.svg"
+                                            alt=""
+                                            class="speciality-item__icon"
+                                        />
+                                    </div>
+                                    <h3>
+                                        <a
+                                            href="#!"
+                                            class="speciality-item__title"
+                                            >UI/UX Design</a
+                                        >
+                                    </h3>
+                                    <p
+                                        class="section-desc speciality-item__desc"
+                                    >
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="col">
+                                <div class="speciality-item">
+                                    <div class="speciality-item__icon-wrap">
+                                        <img
+                                            src="./assets/img/speciality-icon-03.svg"
+                                            alt=""
+                                            class="speciality-item__icon"
+                                        />
+                                    </div>
+                                    <h3>
+                                        <a
+                                            href="#!"
+                                            class="speciality-item__title"
+                                            >Interactive design</a
+                                        >
+                                    </h3>
+                                    <p
+                                        class="section-desc speciality-item__desc"
+                                    >
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- control -->
+                    <div class="control show-on-mobile">
+                        <div class="control-btn control-btn--active"></div>
+                        <div class="control-btn"></div>
+                        <div class="control-btn"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- project -->
+            <section class="project">
+                <div class="container">
+                    <section class="project__heading-wrap">
+                        <h2 class="section-heading project__heading">
+                            Take a look at my recent projects
+                        </h2>
+                        <p class="section-desc project__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </section>
+
+                    <div class="project__list">
+                        <div class="row row-cols-lg-2 row-cols-sm-1 row-cols-1">
+                            <!-- item 1 -->
+                            <div class="col">
+                                <div class="project-item">
+                                    <!-- deco pc/tablet -->
+                                    <img
+                                        src="./assets/img/project-deco-pc-tablet.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-pc-tablet"
+                                    />
+
+                                    <!-- deco mobile -->
+                                    <img
+                                        src="./assets/img/project-deco-mobile.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-mobile"
+                                    />
+
+                                    <!-- body -->
+                                    <section class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Wally Website
+                                        </h3>
+                                        <p class="project-item__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-item__more"
+                                            >Case Study</a
+                                        >
+                                    </section>
+                                    <figure class="project-item__thumb">
+                                        <img
+                                            src="./assets/img/project-img-01.png"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="col">
+                                <div class="project-item project-item__second">
+                                    <!-- deco pc/tablet -->
+                                    <img
+                                        src="./assets/img/project-deco-pc-tablet.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-pc-tablet"
+                                    />
+
+                                    <!-- deco mobile -->
+                                    <img
+                                        src="./assets/img/project-deco-mobile.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-mobile"
+                                    />
+                                    <!-- body -->
+                                    <section class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Banking App
+                                        </h3>
+                                        <p class="project-item__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-item__more"
+                                            >Case Study</a
+                                        >
+                                    </section>
+                                    <figure class="project-item__thumb">
+                                        <img
+                                            src="./assets/img/project-img-02.png"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="col">
+                                <div class="project-item project-item-third">
+                                    <!-- deco pc/tablet -->
+                                    <img
+                                        src="./assets/img/project-deco-pc-tablet.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-pc-tablet"
+                                    />
+
+                                    <!-- deco mobile -->
+                                    <img
+                                        src="./assets/img/project-deco-mobile.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-mobile"
+                                    />
+                                    <!-- body -->
+                                    <section class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Web App
+                                        </h3>
+                                        <p class="project-item__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-item__more"
+                                            >Case Study</a
+                                        >
+                                    </section>
+                                    <figure class="project-item__thumb">
+                                        <img
+                                            src="./assets/img/project-img-03.png"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- item 4 -->
+                            <div class="col">
+                                <div class="project-item project-item-fourth">
+                                    <!-- deco pc/tablet -->
+                                    <img
+                                        src="./assets/img/project-deco-pc-tablet.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-pc-tablet"
+                                    />
+
+                                    <!-- deco mobile -->
+                                    <img
+                                        src="./assets/img/project-deco-mobile.svg"
+                                        alt=""
+                                        class="project-item__deco project-item__deco-mobile"
+                                    />
+                                    <!-- body -->
+                                    <section class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Oculus Website
+                                        </h3>
+                                        <p class="project-item__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-item__more"
+                                            >Case Study</a
+                                        >
+                                    </section>
+                                    <figure class="project-item__thumb">
+                                        <img
+                                            src="./assets/img/project-img-04.png"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__action">
+                        <a href="#!" class="btn project__btn">All Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- work -->
+            <section class="work">
+                <div class="container">
+                    <section class="work__heading-wrap">
+                        <div class="work__label-wrap">
+                            <span class="work__label"> Hey,,,,It’s Arif </span>
+                            <img
+                                src="./assets/img/work-icon-01.svg"
+                                alt=""
+                                class="work__icon"
+                            />
+                        </div>
+                        <h2 class="section-heading work__heading">
+                            Interactive Designer
+                        </h2>
+                        <p class="section-desc work__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </section>
+
+                    <div class="work__show">
+                        <div class="work-item">
+                            <span class="work-item__number">08+</span>
+                            <p class="work-item__desc">Years Experience</p>
+                        </div>
+                        <div class="work-item">
+                            <span class="work-item__number">21+</span>
+                            <p class="work-item__desc">Features & Awards</p>
+                        </div>
+                        <div class="work-item">
+                            <span class="work-item__number">97%</span>
+                            <p class="work-item__desc">Clients Rating</p>
+                        </div>
+                    </div>
+
+                    <div class="work__media">
+                        <img
+                            src="./assets/img/work-img-01.jpg"
+                            alt=""
+                            class="work__background"
+                        />
+
+                        <button class="btn__play-wrap">
+                            <img
+                                src="./assets/img/work-play-video.svg"
+                                alt=""
+                                class="btn__play"
+                            />
+                        </button>
+
+                        <div class="work__intro-video">
+                            <span class="work__intro-video-title"
+                                >Intro Video</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- feedback -->
+            <section class="feedback">
+                <!-- deco  -->
+                <img
+                    src="./assets/img/feedback-deco-mobile-01.svg"
+                    alt=""
+                    class="feedback__deco-mobile-01 show-on-mobile"
+                />
+                <img
+                    src="./assets/img/feedback-deco-mobile-02.svg"
+                    alt=""
+                    class="feedback__deco-mobile-02 show-on-mobile"
+                />
+                <div class="container">
+                    <div class="feedback__heading-wrap">
+                        <h2 class="section-heading feedback__heading">
+                            What people says
+                        </h2>
+                        <p class="section-desc feedback__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+
+                    <div class="feedback__show">
+                        <div class="feedback__list">
+                            <!-- item 1 -->
+                            <div class="feedback-item">
+                                <blockquote class="feedback-item__quote">
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="feedback-item__avatar-group">
+                                    <img
+                                        src="./assets/img/feedback-avatar-01.jpg"
+                                        alt=""
+                                        class="feedback-item__avatar"
+                                    />
+                                    <span class="feedback-item__name"
+                                        >Joe Elia</span
+                                    >
+                                </div>
+                                <p class="section-desc feedback-item__desc">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- control -->
+                    <div class="control">
+                        <div class="control-btn"></div>
+                        <div class="control-btn"></div>
+                        <div class="control-btn control-btn--active"></div>
+                        <div class="control-btn"></div>
+                        <div class="control-btn"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- question -->
+            <section class="question">
+                <div class="container">
+                    <h2 class="section-heading question__heading">
+                        A few questions clients normally ask me
+                    </h2>
+                    <div class="question__list">
+                        <!-- question 1 -->
+                        <input
+                            type="checkbox"
+                            id="question-01"
+                            class="question__input"
+                            hidden
+                        />
+                        <div class="question-item">
+                            <div class="question-item__FAQ">
+                                <h3 class="question-item__ques">
+                                    What is your hourly rate?
+                                </h3>
+                                <p class="question-item__ans">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                            <label
+                                for="question-01"
+                                class="question-item__label"
+                            >
+                                <span class="question__plus">-</span>
+                            </label>
+                        </div>
+
+                        <!-- question 2 -->
+                        <input
+                            type="checkbox"
+                            id="question-02"
+                            class="question__input"
+                            hidden
+                        />
+                        <div class="question-item">
+                            <div class="question-item__FAQ">
+                                <h3 class="question-item__ques">
+                                    What type of projects do you take on?
+                                </h3>
+                                <p class="question-item__ans">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                            <label
+                                for="question-02"
+                                class="question-item__label"
+                            >
+                                <span class="question__plus">-</span>
+                            </label>
+                        </div>
+
+                        <!-- question 3 -->
+                        <input
+                            type="checkbox"
+                            id="question-03"
+                            class="question__input"
+                            hidden
+                        />
+                        <div class="question-item">
+                            <div class="question-item__FAQ">
+                                <h3 class="question-item__ques">
+                                    How do you charge for projects ?
+                                </h3>
+                                <p class="question-item__ans">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                            <label
+                                for="question-03"
+                                class="question-item__label"
+                            >
+                                <span class="question__plus">-</span>
+                            </label>
+                        </div>
+
+                        <!-- question 4 -->
+                        <input
+                            type="checkbox"
+                            id="question-04"
+                            class="question__input"
+                            hidden
+                        />
+                        <div class="question-item">
+                            <div class="question-item__FAQ">
+                                <h3 class="question-item__ques">
+                                    What time-zone do you work in?
+                                </h3>
+                                <p class="question-item__ans">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                            <label
+                                for="question-04"
+                                class="question-item__label"
+                            >
+                                <span class="question__plus">-</span>
+                            </label>
+                        </div>
+
+                        <!-- question 5 -->
+                        <input
+                            type="checkbox"
+                            id="question-05"
+                            class="question__input"
+                            hidden
+                        />
+                        <div class="question-item">
+                            <div class="question-item__FAQ">
+                                <h3 class="question-item__ques">
+                                    How often can we communicate?
+                                </h3>
+                                <p class="question-item__ans">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                            <label
+                                for="question-05"
+                                class="question-item__label"
+                            >
+                                <span class="question__plus">-</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- atmosphere -->
+            <section class="atmosphere">
+                <div class="container">
+                    <section class="atmosphere__heading-wrap">
+                        <h2 class="section-heading atmosphere__heading">
+                            My atmosphere
+                        </h2>
+                        <p class="section-desc atmosphere__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a href="#!" class="atmosphere__link"
+                            >@interaction_arif</a
+                        >
+                    </section>
+
+                    <div class="atmosphere__list">
+                        <div class="row row-cols-lg-3 row-cols-sm-1 row-cols-1">
+                            <div class="col">
+                                <figure class="atmosphere-item">
+                                    <img
+                                        src="./assets/img/atmosphere-01.jpg"
+                                        alt=""
+                                        class="atmosphere-item__img"
+                                    />
+                                </figure>
+                            </div>
+
+                            <div class="col">
+                                <figure class="atmosphere-item">
+                                    <img
+                                        src="./assets/img/atmosphere-02.jpg"
+                                        alt=""
+                                        class="atmosphere-item__img"
+                                    />
+                                </figure>
+                            </div>
+
+                            <div class="col">
+                                <figure class="atmosphere-item">
+                                    <img
+                                        src="./assets/img/atmosphere-03.jpg"
+                                        alt=""
+                                        class="atmosphere-item__img"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- control -->
+                    <div class="control show-on-mobile">
+                        <div class="control-btn"></div>
+                        <div class="control-btn"></div>
+                        <div class="control-btn control-btn--active"></div>
+                        <div class="control-btn"></div>
+                        <div class="control-btn"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact -->
+            <section class="contact">
+                <!-- deco  mobile -->
+                <img
+                    src="./assets/img/contact-deco-mobile.svg"
+                    alt=""
+                    class="contact__deco-mobile show-on-mobile"
+                />
+                <div class="inner contact-inner">
+                    <section class="contact__body">
+                        <img
+                            src="./assets/img/contact-icon.png"
+                            alt=""
+                            class="contact__icon"
+                        />
+                        <h2 class="section-heading contact__heading">
+                            Got a project? Let’s talk
+                        </h2>
+                        <p class="section-desc contact__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a href="#!" class="btn contact__btn">Book a Call</a>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="inner">
+                    <!-- logo -->
+                    <div class="inner-logo">
+                        <a href="#!" class="inner-logo__icon">
+                            <img src="./assets/img/inner-icon.svg" alt="" />
+                        </a>
+                        <a href="#!" class="inner-logo__email"
+                            >hi@arif.interactive</a
+                        >
+                    </div>
+
+                    <!-- avatar -->
+                    <img
+                        src="./assets/img/inner_avatar.png"
+                        alt=""
+                        class="inner__avatar"
+                    />
+
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Projects</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Journey</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Service</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="inner">
+                <div class="footer__bottom">
+                    <p class="footer__copy-right">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+
+                    <p class="footer__policy">
+                        <a href="#!" class="footer__policy-link"
+                            >Privacy Policy</a
+                        >
+                        <span class="footer__vertical">|</span>
+                        <a href="#!" class="footer__termOfConditions"
+                            >Terms of Conditions
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
